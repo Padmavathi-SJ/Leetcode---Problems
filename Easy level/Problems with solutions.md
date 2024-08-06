@@ -93,3 +93,20 @@ class Solution {
 }
 ```
 
+## Rotate Array:
+
+**Given an integer array nums, rotate the array to the right by k steps, where k is non-negative.**
+
+```
+void rotate(int* nums, int numsSize, int k) {
+    for(int i=0; i<k; i++){
+        int last = nums[numsSize-1];
+    for(int i=numsSize-1; i>0; i--){
+        nums[i]=nums[i-1];
+    }
+    nums[0]=last;
+    }
+}
+```
+
+
