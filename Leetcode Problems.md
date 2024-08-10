@@ -1,6 +1,6 @@
 ### 1823.Find the winner of the game
 
-```C++
+```
 class Solution {
 public:
     int findTheWinner(int n, int k) {
@@ -25,7 +25,7 @@ public:
 
 ```
 
-- In the above code, we are traversing the queue till reach the kth position.
-- Once reached pop that position, and start from the next of the popped position and repeat.
-- this performs till the size of queue will less than 1 and stop
-- the last balanced position is the winner of the game.
+**In the above code, we are traversing the queue till reach the kth position.**
+**Once reached pop that position, and start from the next of the popped position and repeat.**
+**this performs till the size of queue will less than 1 and stop.**
+**the last balanced position is the winner of the game.**
