@@ -1,4 +1,4 @@
-## 88. Merge Sorted Array
+### 88. Merge Sorted Array
 
 **You are given two integer arrays nums1 and nums2, sorted in non-decreasing order, and two integers m and n, representing the number of elements in nums1 and nums2 respectively.Merge nums1 and nums2 into a single array sorted in non-decreasing order. The final sorted array should not be returned by the function, but instead be stored inside the array nums1. To accommodate this, nums1 has a length of m + n, where the first m elements denote the elements that should be merged, and the last n elements are set to 0 and should be ignored. nums2 has a length of n.**
 
@@ -35,7 +35,7 @@ class Solution {
 
 
 
-## 27. Remove Element
+### 27. Remove Element
 
 **Given an integer array nums and an integer val, remove all occurrences of val in nums in-place. The order of the elements may be changed. Then return the number of elements in nums which are not equal to val.
 Consider the number of elements in nums which are not equal to val be k, to get accepted, you need to do the following things:
@@ -56,7 +56,7 @@ class Solution {
 }
 ```
 
-## 26.Remove duplicates from sorted array:
+### 26.Remove duplicates from sorted array:
 
 **Given an integer array nums sorted in non-decreasing order, remove the duplicates in-place such that each unique element appears only once. The relative order of the elements should be kept the same. Then return the number of unique elements in nums.
 Consider the number of unique elements of nums to be k, to get accepted, you need to do the following things:
@@ -133,7 +133,7 @@ class Solution {
 }
 ```
 
-## 122. Best Time to Buy and Sell Stock - II:
+### 122. Best Time to Buy and Sell Stock - II:
 **You are given an integer array prices where prices[i] is the price of a given stock on the ith day. On each day, you may decide to buy and/or sell the stock. You can only hold at most one share of the stock at any time. However, you can buy it then immediately sell it on the same day. Find and return the maximum profit you can achieve.**
 ```
 class Solution {
@@ -147,4 +147,22 @@ class Solution {
     }
 }
 ```
+### 13.Roman to Integer
+**Roman numerals are represented by seven different symbols: I, V, X, L, C, D and M.**
 
+Symbol       Value
+I             1
+V             5
+X             10
+L             50
+C             100
+D             500
+M             1000
+For example, 2 is written as II in Roman numeral, just two ones added together. 12 is written as XII, which is simply X + II. The number 27 is written as XXVII, which is XX + V + II.
+
+Roman numerals are usually written largest to smallest from left to right. However, the numeral for four is not IIII. Instead, the number four is written as IV. Because the one is before the five we subtract it making four. The same principle applies to the number nine, which is written as IX. There are six instances where subtraction is used:
+
+I can be placed before V (5) and X (10) to make 4 and 9. 
+X can be placed before L (50) and C (100) to make 40 and 90. 
+C can be placed before D (500) and M (1000) to make 400 and 900.
+Given a roman numeral, convert it to an integer.**
