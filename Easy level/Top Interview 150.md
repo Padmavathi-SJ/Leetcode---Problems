@@ -135,6 +135,7 @@ class Solution {
 
 ### 122. Best Time to Buy and Sell Stock - II:
 **You are given an integer array prices where prices[i] is the price of a given stock on the ith day. On each day, you may decide to buy and/or sell the stock. You can only hold at most one share of the stock at any time. However, you can buy it then immediately sell it on the same day. Find and return the maximum profit you can achieve.**
+
 ```
 class Solution {
     public int maxProfit(int[] prices) {
@@ -158,11 +159,66 @@ L             50
 C             100
 D             500
 M             1000
-For example, 2 is written as II in Roman numeral, just two ones added together. 12 is written as XII, which is simply X + II. The number 27 is written as XXVII, which is XX + V + II.
+**For example, 2 is written as II in Roman numeral, just two ones added together. 12 is written as XII, which is simply X + II. The number 27 is written as XXVII, which is XX + V + II.**
 
-Roman numerals are usually written largest to smallest from left to right. However, the numeral for four is not IIII. Instead, the number four is written as IV. Because the one is before the five we subtract it making four. The same principle applies to the number nine, which is written as IX. There are six instances where subtraction is used:
+**Roman numerals are usually written largest to smallest from left to right. However, the numeral for four is not IIII. Instead, the number four is written as IV. Because the one is before the five we subtract it making four. The same principle applies to the number nine, which is written as IX. There are six instances where subtraction is used:**
 
-I can be placed before V (5) and X (10) to make 4 and 9. 
+**I can be placed before V (5) and X (10) to make 4 and 9. 
 X can be placed before L (50) and C (100) to make 40 and 90. 
 C can be placed before D (500) and M (1000) to make 400 and 900.
 Given a roman numeral, convert it to an integer.**
+
+**using c++**
+```
+class Solution {
+public:
+    int romanToInt(string s) {
+        unordered_map<char, int> m;
+        
+        m['I'] = 1;
+        m['V'] = 5;
+        m['X'] = 10;
+        m['L'] = 50;
+        m['C'] = 100;
+        m['D'] = 500;
+        m['M'] = 1000;
+        
+        int ans = 0;
+        
+        for(int i = 0; i < s.length(); i++){
+            if(m[s[i]] < m[s[i+1]]){
+                ans -= m[s[i]];
+            }
+            else{
+                ans += m[s[i]];
+            }
+        }
+        return ans;
+    }
+};
+```
+
+### 58. Length of Last Word
+**Given a string s consisting of words and spaces, return the length of the last word in the string.**
+**A word is a maximal substring consisting of non-space characters only.**
+
+**using java**
+```
+class Solution {
+    public int lengthOfLastWord(String s) {
+        boolean found = false;
+        int counter = 0;
+        for(int i = s.length()-1; i >=0; i--) {
+            if(s.charAt(i) != ' ') {
+                counter++;
+                found = true;
+            }
+            else if(found) break;
+        }
+        return counter;
+    }
+}
+```
+
+
+ 
