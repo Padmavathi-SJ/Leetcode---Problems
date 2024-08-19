@@ -270,5 +270,28 @@ class Solution {
 }
 ```
 
-### 
+### 383. RansomNote:
+
+**Given two strings ransomNote and magazine, return true if ransomNote can be constructed by using the letters from magazine and false otherwise.
+Each letter in magazine can only be used once in ransomNote.**
+
+**using java**
+```
+class Solution {
+    public boolean canConstruct(String ransomNote, String magazine) {
+        char arr1[]=magazine.toCharArray();
+        char arr2[]=ransomNote.toCharArray();
+        int letters[]=new int[26];
+        for(char i:arr1){
+            letters[i-'a']++;
+        }
+        for(char j:arr2){
+            letters[j-'a']--;
+            if(letters[j-'a']==-1)
+                return false;
+        }
+            return true;
+    }
+}
+```
  
