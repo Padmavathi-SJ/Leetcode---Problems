@@ -331,6 +331,7 @@ class Solution {
 **Given a pattern and a string s, find if s follows the same pattern.
 Here follow means a full match, such that there is a bijection between a letter in pattern and a non-empty word in s.**
 
+**using java**
 ```
 // Algo Used: Hashing + Linear Traversal
 //TC: O N , SC: O 1
@@ -375,6 +376,8 @@ class Solution {
 
 **Given two strings s and t, return true if t is an anagram of s, and false otherwise.
 An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.**
+
+**using c++**
 
 ```
 class Solution {
