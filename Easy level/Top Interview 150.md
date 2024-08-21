@@ -415,7 +415,8 @@ public:
 };
 ```
 
-###
+### 202. Happy Number:
+**using c**
 ```
 int sumPow(int n){
     int sum=0;
