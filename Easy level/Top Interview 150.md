@@ -507,7 +507,7 @@ public class Solution {
 }
 ```
 
-### Merge two sorted lists
+### 21. Merge two sorted lists
 
 **You are given the heads of two sorted linked lists list1 and list2.
 Merge the two lists into one sorted list. The list should be made by splicing together the nodes of the first two lists.
@@ -536,6 +536,11 @@ class Solution {
 }
 ```
 ### 104. Maximum Depth of Binary Tree
+
+**Given the root of a binary tree, return its maximum depth.
+A binary tree's maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.**
+
+**using java**
 
 ```
 /**
