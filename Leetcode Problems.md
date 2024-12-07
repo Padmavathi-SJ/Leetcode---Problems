@@ -29,3 +29,8 @@ public:
 **Once reached pop that position, and start from the next of the popped position and repeat.**
 **this performs till the size of queue will less than 1 and stop.**
 **the last balanced position is the winner of the game.**
+
+
+### 20. Valid Parantheses
+### 100. Same Tree
+### 226. Invert Binary Tree
