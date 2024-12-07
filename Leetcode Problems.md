@@ -39,3 +39,5 @@ public:
 ### 274. H-Index
 ### 380. Insert Delete GetRandom O(1)
 ### 238. Product of Array Except Self
+### 134. Gas Station
+### 12. Integer to Roman
