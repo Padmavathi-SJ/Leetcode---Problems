@@ -30,7 +30,11 @@ public:
 **this performs till the size of queue will less than 1 and stop.**
 **the last balanced position is the winner of the game.**
 
-
+## From 150 top interview problems
 ### 20. Valid Parantheses
 ### 100. Same Tree
 ### 226. Invert Binary Tree
+### 55. Jump Game
+### 45. Jump Game  II
+### 274. H-Index
+### 380. Insert Delete GetRandom O(1)
